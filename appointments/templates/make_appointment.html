@@ -1,0 +1,19 @@
+
+{% block title %}
+
+{% endblock title %}
+
+{% block content %}
+    <hr>
+
+    <i><h4>Поздравляем с регистрацией!</h4></i>
+   <hr>
+
+    <body>
+       {# <form action = "{% url 'appointments:make_appointment' %}" method="POST" enctype="multipart/form-data">#}
+        {% csrf_token %}
+        <input type="submit">
+        </form>
+    </body>
+
+{% endblock content %}
